@@ -1,0 +1,179 @@
+/*---------------------------normalize----------------------------*/
+
+h1,h2,h3 {
+  font-family: 'Dosis', sans-serif;
+}
+body {
+  font-family: 'Dosis', sans-serif;
+
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+/*---------------------------landing Screen------------------------*/
+.normalBtn{
+  list-style: none;
+  display: inline-flex;
+  padding-top: 36.5em;
+}
+
+
+.landing {
+  background:linear-gradient(rgba(250,250,250,1), rgba(250,250,250,0.5)),
+   url("images/landingPage.jpg") no-repeat top left;
+  background-size: cover;
+  margin-top: -4.5%;
+  height: 40em;
+  min-width: 100%;
+}
+
+.mainTitle{
+  text-align: left;
+  font-size: 4em;
+  padding: 8.3em 0 0 1em;
+
+}
+
+
+
+.links {
+  text-align: center;
+
+
+  /*margin-top: -10em;*/
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*--------------------------Popup Styles---------------------*/
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /*background: rgba(0, 0, 0, 0.7);*/
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+
+  -webkit-box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+   -moz-box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+   box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 65%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #06D85F;
+}
+.popup .content {
+  max-width: 85%;
+  max-height: 40%;
+  overflow: auto;
+}
+
+/*-------------------About-Contact------------------*/
+.infoPane{
+  margin-left: 2em;
+  margin-top: 1em;
+}
+.infoPane h3 a{
+  color:#06D85F;
+
+}
+
+.infoPane h3 a:hover{
+text-decoration: underline;
+}
+
+.aboutImg{
+  border-radius: 10% 10% 50%;
+
+
+}
+
+/*-------------------------mobile media queries----------------------*/
+
+@media (min-width: 44em) {
+
+
+
+}
+@media (max-width: 43em){
+
+  .mainTitle{
+    text-align: center;
+    font-size: 3.1em !important;
+    padding: 11.15em 0 0 .5em;
+
+  }
+
+}
+
+
+
+@media (max-width: 36em){
+
+  .mainTitle{
+    text-align: center;
+    font-size: 3.1em !important;
+    padding: 11.15em 0 0 .5em;
+
+  }
+  .btnContainer{
+    width:100%;
+  }
+
+  .mobileBtn{
+    list-style: none;
+    display: inline-flex;
+    margin: 0 15%;
+    /*padding-top: 36.5em;*/
+  }
+  .mobileBtn li {
+    padding: 1em;
+  }
+
+
+
+  .infoPane h3 a{
+    font-size: .8em;
+  }
+
+  .aboutImg{
+    border-radius: 10% 10% 50%;
+    margin-left: 2em;
+    max-width: 60%;
+
+  }
+
+
+
+}

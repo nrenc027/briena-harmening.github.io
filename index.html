@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+<title>Briena Harmening</title>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+
+ <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+   <!-- Angular Material Library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+
+
+
+
+
+</head>
+
+<body ng-app="BlankApp" ng-cloak>
+
+
+
+
+
+<div class="landing">
+
+    <div class="linkBox" layout="row">
+        <div class="col-md-5">
+          <h1 class="mainTitle">Briena Harmening</h1>
+        </div>
+          <div class="links col-md-6">
+
+            <div hide-xs layout="row">
+              <ul class="normalBtn">
+                <li><md-button class="md-fab md-raised">Work</md-button></li>
+                <li><md-button class="md-fab md-raised"><a href="#about" ng-click>about</a></md-button></li>
+
+              </ul>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+<footer hide-sm hide-md hide-lg show-xs>
+
+<div class="btnContainer">
+  <ul class="mobileBtn" >
+      <li><md-button class="md-fab md-raised">Work</md-button></li>
+      <li><md-button class="md-fab md-raised"><a href="#about" ng-click>about</a></md-button></li>
+
+  </ul>
+</div>
+
+
+</footer>
+
+
+<div id="about" class="overlay ">
+	<div class="popup">
+
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      <div layout="row" layout-xs="column">
+        <div class="col-md-3">
+          <img class="aboutImg" src="styles/images/briena.jpg" alt="Briena Harmening">
+        </div>
+
+        <div class="col-md-5 infoPane">
+          <h3>Briena Harmening</h3>
+          <p>
+            Lives and works in Nashville, Tennessee. She is a 2010 MFA graduate from the University of Tennessee.  Briena currently teaches Advanced Art,  and the International Baccalaureate Art program at Hillsoboro High School.   
+
+          </p>
+
+          <h3><a href="mailto:brienarharmening@yahoo.com">Briena Harmening At Yahoo Dot Com</a></h3>
+
+        </div>
+
+      </div>
+
+
+
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript">
+    /**
+     * You must include the dependency on 'ngMaterial'
+     */
+    angular.module('BlankApp', ['ngMaterial']);
+  </script>
+
+
+
+</body>
+
+</html>
