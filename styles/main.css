@@ -12,17 +12,60 @@ a{
   text-decoration: none;
   color: #000;
 }
+
+.column{
+	padding: 1em;
+	box-sizing: border-box;
+	margin: 0 auto;
+	max-width: 28em;
+	text-align: center;
+}
+
+#hero{
+	background:
+		linear-gradient(rgba(250,250,250,1), rgba(250,250,250,0.5)),
+		url(images/landingPage.jpg) no-repeat top left;
+  	color: #000;
+  	text-align: left;
+  	height: 40em;
+  	padding: 1.5625em 0;
+  	background-size: cover;
+
+}
+
+
+#hero img {
+  max-width: 9.375em;
+  border-radius: 50%;
+   margin: 3.5em 0 0 0;
+  -webkit-box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+  -moz-box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+  box-shadow: 2px 7px 25px -2px rgba(0,0,0,0.43);
+
+
+}
+
+#hero h2{
+	font-size: 4em;
+	margin-bottom: .25em;
+	margin-top: .25em;
+  padding: 1.2em;
+	font-family: 'Dosis', sans-serif;
+	/*text-shadow: 0.125rem 0.125rem 0.5rem #000;*/
+}
+
+
 /*---------------------------landing Screen------------------------*/
 .normalBtn{
   list-style: none;
   display: inline-flex;
-  padding-top: 36.5em;
+  padding-top: 5.5em;
 }
 
 
 .landing {
   background:linear-gradient(rgba(250,250,250,1), rgba(250,250,250,0.5)),
-   url("images/landingPage.jpg") no-repeat top left;
+   url(images/landingPage.jpg) no-repeat top left;
   background-size: cover;
   margin-top: -4.5%;
   height: 40em;
@@ -123,26 +166,56 @@ text-decoration: underline;
 
 @media (min-width: 44em) {
 
-
-
-}
-@media (max-width: 43em){
-
+  .column {
+    float: left;
+    width: 33.333%; /* 100/3 */
+    padding: 1em; /* 16px */
+    margin: 0;
+  }
   .mainTitle{
-    text-align: center;
+    text-align: left;
     font-size: 3.1em !important;
     padding: 11.15em 0 0 .5em;
 
   }
+  .column {
+    padding: 0.625em; /* 10px */
+  }
+
+
+		#hero h2{
+			font-size: 3em;
+		}
+
+    #hero{
+    	background:
+
+      	color: #000;
+      	text-align: left;
+      	height: 40em;
+      	padding: 1.5em 0 !important;
+        background-size: cover;
+
+    }
+
 
 }
 
 
 
-@media (max-width: 36em){
+@media (max-width: 44em){
+  #hero{
+  	background:
 
+    	color: #000;
+    	text-align: left;
+    	min-height: 52em;
+    	padding: em 0 !important;
+      background-size: cover;
+
+  }
   .mainTitle{
-    text-align: center;
+    text-align: left;
     font-size: 3.1em !important;
     padding: 11.15em 0 0 .5em;
 
@@ -161,8 +234,6 @@ text-decoration: underline;
     padding: 1em;
   }
 
-
-
   .infoPane h3 a{
     font-size: .8em;
   }
@@ -171,6 +242,17 @@ text-decoration: underline;
     border-radius: 10% 10% 50%;
     margin-left: 2em;
     max-width: 60%;
+
+  }
+  #hero h2{
+  	font-size: 3em;
+  }
+  .popup .close{
+  	float:right;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
 
   }
 
