@@ -1,21 +1,26 @@
 <!doctype html>
 <html>
+
 <head>
-<title>Briena Harmening</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
-<link rel="stylesheet" href="styles/main.css">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
- <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	<meta charset="utf-8">
+	<title>Briena Harmening</title>
+	<link rel="shortcut icon" href="" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="styles/normalize.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-animate.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-aria.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-messages.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
 
-   <!-- Angular Material Library -->
-   <script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
 
 
@@ -24,118 +29,220 @@
 
 </head>
 
-<body ng-app="BlankApp" ng-cloak>
+<body>
 
+	<script type="text/javascript" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
-
-  <section layout="column" role="main" flex>
-    <md-content>
-
-      <section id="hero">
-
-        <div class="" layout-md="row" layout-lg="row" layout-sm="column" layout-xs="column">
-
-          <div class="col-md-6">
-            <h2>Briena Harmening</h2>
-          </div>
-          <div class="col-md-6">
-            <ul class="normalBtn">
-              <li><md-button class="md-fab md-raised">Work</md-button></li>
-              <li><md-button class="md-fab md-raised"><a href="#about" ng-click>about</a></md-button></li>
-
-            </ul>
-          </div>
-
-        </div>
+	<div ng-app="App" ng-controller="AppCtrl">
 
 
 
 
 
+		<section layout="column" role="main" flex>
 
 
 
-      </section>
+			<md-content>
+
+				<!--
+				<md-toolbar class="md-whiteframe-z2" role="toolbar" style="position:fixed;">
+					<div class="md-toolbar-tools">
+
+
+						<h2 class="md-title nav_scroll" style="float:right;"> <a href="#hero" class="nav_scroll">Briena Harmening</a></h2>
+						<span flex></span>
+
+						<a href="#about" class="nav_scroll aboutBtn">
+							<md-button class="md-fab menu-btn nav_scroll aboutBtn"  ng-click="" aria-label="About">
+								About
+							</md-button>
+
+						</a>
+
+
+						<a href="#work" class="nav_scroll workBtn">
+							<md-button class="md-fab menu-btn nav_scroll aboutBtn"  ng-click="" aria-label="Work">
+							Work
+							</md-button>
+
+						</a>
 
 
 
-<!-- <div class="landing">
 
-    <div class="linkBox" layout="row">
-        <div class="col-md-5">
-          <h1 class="mainTitle">Briena Harmening</h1>
-        </div>
-          <div class="links col-md-6">
-
-            <div hide-xs layout="row">
-              <ul class="normalBtn">
-                <li><md-button class="md-fab md-raised">Work</md-button></li>
-                <li><md-button class="md-fab md-raised"><a href="#about" ng-click>about</a></md-button></li>
-
-              </ul>
+					</div>
+				</md-toolbar> -->
 
 
 
-            </div>
-        </div>
-    </div>
+
+				<section id="hero">
+
+					<md-tabs md-dynamic-height>
+						<md-tab>
+							<md-tab-label><span hide-xs hide-sm><h2>Briena Harmening</h2></span><span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><md-button class="md-fab menu-btn"><md-icon><i class="material-icons" style="color:#000;">home</i></md-icon></md-button></span></md-tab-label>
+							<md-tab-body>
+								<md-content style="background-color:transparent;">
+
+									<span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><h2>Briena Harmening</h2></span>
+
+
+								</md-content>
+
+							</md-tab-body>
+
+						</md-tab>
+
+						<md-tab>
+							<md-tab-label><md-button class="md-fab menu-btn">About</md-button></md-tab-label>
+							<md-tab-body>
+								<md-content style="margin-top:1.5em; background-color:transparent;">
+									<md-card id="about" class="cardStyle">
+										<div class="contentContainer">
+											<div class="autoMarg">
+												<div class="column">
+													<img class="aboutImg" src="styles/images/briena.jpg" alt="Briena Harmening">
+												</div>
+
+												<div class="contentColumn">
+													<h3>Briena Harmening</h3>
+													<p>
+														Lives and works in Nashville, Tennessee. She is a 2010 MFA graduate from the University of Tennessee. Briena currently teaches Advanced Art, and the International Baccalaureate Art program at Hillsoboro High School.
+
+													</p>
+													<h2 class="helloBack"><a href="mailto:brienarharmening@yahoo.com">Briena Harmening At Yahoo Dot Com</a></h2>
+
+												</div>
+
+											</div>
 
 
 
-</div> -->
-<footer>
+										</div>
+									</md-card>
+								</md-content>
+							</md-tab-body>
 
-<div class="btnContainer">
-  <ul class="mobileBtn" >
-      <li><md-button class="md-fab md-raised">Work</md-button></li>
-      <li><md-button class="md-fab md-raised"><a href="#about" ng-click>about</a></md-button></li>
+						</md-tab>
 
-  </ul>
-</div>
+						<md-tab>
+							<md-tab-label class=""> <md-button class="md-fab menu-btn">Work</md-button></md-tab-label>
+							<md-tab-body>
+								<md-content style="margin-top:1.5em; background-color:transparent;">
+									<md-card class="helloBack">
+										<div class="contentContainer">
+											<div class="autoMargHello">
+												<h2>Works</h2>
+
+												<p>Look at all the pretty</p>
 
 
-</footer>
-</md-container>
-</section>
+											</div>
 
-<div id="about" class="overlay ">
-	<div class="popup">
 
-		<a class="close" href="#">&times;</a>
-		<div class="content">
-      <div layout="row" layout-xs="column">
-        <div class="col-md-3">
-          <img class="aboutImg" src="styles/images/briena.jpg" alt="Briena Harmening">
-        </div>
+										</div>
+									</md-card>
 
-        <div class="col-md-5 infoPane">
-          <h3>Briena Harmening</h3>
-          <p>
-            Lives and works in Nashville, Tennessee. She is a 2010 MFA graduate from the University of Tennessee.  Briena currently teaches Advanced Art,  and the International Baccalaureate Art program at Hillsoboro High School.
 
-          </p>
+									</md-conetent>
+							</md-tab-body>
 
-          <h3><a href="mailto:brienarharmening@yahoo.com">Briena Harmening At Yahoo Dot Com</a></h3>
+						</md-tab>
 
-        </div>
 
-      </div>
+					</md-tabs>
 
 
 
-		</div>
+
+
+
+
+				</section>
+
+				<!-- <section class="main">
+					<div class="container"> -->
+
+
+
+						<!--ABOUT-->
+						<!-- <section id="about">
+							<md-card class="cardStyle">
+								<div class="contentContainer">
+									<div class="autoMarg">
+										<div class="column">
+											  <img class="aboutImg" src="styles/images/briena.jpg" alt="Briena Harmening">
+										</div>
+
+										<div class="contentColumn">
+											<h3>Briena Harmening</h3>
+						          <p>
+						            Lives and works in Nashville, Tennessee. She is a 2010 MFA graduate from the University of Tennessee.  Briena currently teaches Advanced Art,  and the International Baccalaureate Art program at Hillsoboro High School.
+
+						          </p>
+											<h2 class="helloBack"><a href="mailto:brienarharmening@yahoo.com">Briena Harmening At Yahoo Dot Com</a></h2>
+
+										</div>
+
+									</div>
+
+
+
+								</div>
+							</md-card>
+						</section> -->
+
+
+
+
+						<!--CONTACT-->
+						<!-- <section id="work">
+							<md-card class="helloBack">
+								<div class="contentContainer">
+									<div class="autoMargHello">
+										<h2>Say Hello!</h2>
+
+										<h3><a href="mailto:brienarharmening@yahoo.com">Briena Harmening At Yahoo Dot Com</a></h3>
+									</div>
+
+
+								</div>
+							</md-card>
+						</section> -->
+
+
+
+
+
+
+						<footer>
+
+							<p class="footer-text">
+								<i class="fa fa-copyright" aria-hidden="true"></i> 2017 Briena Harmening
+							</p>
+
+
+
+						</footer>
+					</div>
+				</section>
+				</md-content>
+		<!-- </section> -->
+
+
+
+
 	</div>
-</div>
+	<script type="text/javascript" src="js/main.js"></script>
+
+	<script src="js/mainController.js">
+		< script type = "text/javascript"
+		href = "js/main.js" >
+	</script>
+	</script>
 
 
-
-
-<script type="text/javascript">
-    /**
-     * You must include the dependency on 'ngMaterial'
-     */
-    angular.module('BlankApp', ['ngMaterial']);
-  </script>
 
 
 
