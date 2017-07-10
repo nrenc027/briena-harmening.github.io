@@ -210,7 +210,7 @@ md-tabs-wrapper{
 	color: #000 !important;
 }
 md-tabs .md-tab .md-ripple-container {
-    color: rgb(0,0,0) !important;
+    display:none !important;
 }
 md-tabs .md-tab.md-active {
 	color: #000 !important;
@@ -220,70 +220,9 @@ md-tabs .md-tab.md-active {
 
 /* End Hero Section */
 
-/*Social Section*/
 
-.social {
-	width: 100%;
-	background-color: #1CBCBD;
-	color: #fafafa;
-    padding: .8em 0;
-    text-align: center;
-    font-family: 'Dosis', sans-serif;
 
-}
 
-.social .container h3 {
-	 font-size: 1.5em;
-}
-
-.social-list{
-
-	list-style: none;
-    display: inline-block;
-    margin: 0;
-    padding: 0;
-    font-size: 3em;
-
-}
-
-.social-item{
-	display: inline-table;
-
-}
-.social-item a{
-	text-decoration: none !important;
-	color: #fafafa;
-	padding: 0 1.1em;
-    display: block;
-    transition: transform 150ms ease-in-out;
-}
-.social-item a:hover {
-  transform: scale(1.25);
-}
-
-.doList{
-	list-style: none;
-	margin: 0;
-	text-align: left;
-}
-.doTitles{
-	font-size: 1.1em;
-	font-weight: bold;
-}
-
-.doBody{
-	font-size: .88em;
-}
-.doBodyText{
-	margin-top: -.8em;
-	font-size: .95em;
-}
-.doBodyText i {
-	font-size: .5em;
-}
-.doRegion{
-	margin-bottom: 0.2em;
-}
 
 @media (min-height: 85em) {
 	#hero{

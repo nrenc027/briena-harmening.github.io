@@ -20,6 +20,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.6/angular-messages.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
+	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/45226/material-photo-gallery.min.js"></script>
 
 
 
@@ -47,14 +48,12 @@
 
 
 
-
-
-
 				<section id="hero">
 
+
 					<md-tabs md-dynamic-height>
-						<md-tab>
-							<md-tab-label><span hide-xs hide-sm><h2>Briena Harmening</h2></span><span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><md-button class="md-fab menu-btn"><md-icon><i class="material-icons" style="color:#000;">home</i></md-icon></md-button></span></md-tab-label>
+						<md-tab id="landing">
+							<md-tab-label><span hide-xs hide-sm><h2 style="font-size:1.5em;">Briena Harmening</h2></span><span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><md-button class="md-fab menu-btn"><md-icon><i class="material-icons" style="color:#000;">home</i></md-icon></md-button></span></md-tab-label>
 							<md-tab-body>
 								<md-content style="background-color:transparent;">
 
@@ -68,7 +67,9 @@
 						</md-tab>
 
 						<md-tab>
-							<md-tab-label><md-button class="md-fab menu-btn">About</md-button></md-tab-label>
+							<md-tab-label>
+								<md-button class="md-fab menu-btn">About</md-button>
+							</md-tab-label>
 							<md-tab-body>
 								<md-content style="margin-top:1.5em; background-color:transparent;">
 									<md-card id="about" class="cardStyle">
@@ -100,18 +101,119 @@
 						</md-tab>
 
 						<md-tab>
-							<md-tab-label class=""> <md-button class="md-fab menu-btn">Work</md-button></md-tab-label>
+							<md-tab-label class="">
+								<md-button class="md-fab menu-btn">Work</md-button>
+							</md-tab-label>
 							<md-tab-body>
 								<md-content style="margin-top:1.5em; background-color:transparent;">
 									<md-card class="helloBack">
 										<div class="contentContainer">
-											<div class="autoMargHello">
-												<h2>Works</h2>
+											<md-tabs md-dynamic-height>
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/2015/DSC02758/thumb.jpg);" alt="2015 Collection" aria-label="2015 Collection">
+														</md-button>
 
-												<p>Look at all the pretty</p>
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/2016/IMG_0761/thumb.jpg);" alt="2016 Collection" aria-label="2016 Collection">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/crochet/DSC02552/thumb.jpg);" alt="Crochet Works" aria-label="Crochet works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
 
 
-											</div>
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/quilts/DSC03850/thumb.jpg);" alt="Quilt Works" aria-label="Quilt Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/BC_Emb/DSCN0973/thumb.jpg);" alt="Birth-Control Embroidery Works" aria-label="Birth-Control Embroidery Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/fibers/HarmeningArizona/thumb.jpg);" alt="Fiber Works" aria-label="Fiber Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/metalica/_DSC0068/thumb.jpg);" alt="Metalica Works" aria-label="Metalica Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/painting/DSC00393/thumb.jpg);" alt="Painting Works" aria-label="Painting Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+												<md-tab>
+													<md-tab-label>
+														<md-button class="md-fab" style="background:url(images/matresses/oh_how_lady_like/thumb.jpg);" alt="Matress Works" aria-label="Matress Works">
+														</md-button>
+
+													</md-tab-label>
+													<md-tab-body>
+													</md-tab-body>
+
+												</md-tab>
+
+
+
+											</md-tabs>
 
 
 										</div>
@@ -141,18 +243,18 @@
 
 
 
-						<footer>
+				<footer>
 
-							<p class="footer-text">
-								<i class="fa fa-copyright" aria-hidden="true"></i> 2017 Briena Harmening
-							</p>
+					<p class="footer-text">
+						<i class="fa fa-copyright" aria-hidden="true"></i> 2017 Briena Harmening
+					</p>
 
 
 
-						</footer>
-					</div>
-				</section>
-				</md-content>
+				</footer>
+	</div>
+	</section>
+	</md-content>
 
 
 
