@@ -26,12 +26,6 @@
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
 	<script src="https://ettrics.github.io/material-photo-gallery/dist/js/material-photo-gallery.js"></script>
 
-
-
-
-
-
-
 </head>
 
 <body>
@@ -40,21 +34,9 @@
 
 	<div ng-app="App" ng-controller="AppCtrl">
 
-
-
-
-
 		<section layout="column" role="main" flex>
-
-
-
 			<md-content>
-
-
-
 				<section id="hero">
-
-
 					<md-tabs md-dynamic-height>
 						<md-tab id="landing">
 							<md-tab-label><span hide-xs hide-sm><h2 style="font-size:1.5em;">Briena Harmening</h2></span><span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><md-button class="md-fab menu-btn"><md-icon><i class="material-icons" style="color:#000;">home</i></md-icon></md-button></span></md-tab-label>
@@ -62,7 +44,6 @@
 								<md-content style="background-color:transparent;">
 
 									<span show-xs show-sm hide-md hide-lg hide-gt-lg hide-xl><h2>Briena Harmening</h2></span>
-
 
 								</md-content>
 
@@ -123,10 +104,8 @@
 													</md-tab-label>
 													<md-tab-body>
 
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSource2015" class="md-whiteframe-4dp">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+															<md-grid-tile ng-repeat="image in imgSource2015" class="md-whiteframe-4dp" ng-click="showSlideShow(imgSource2015, $index)">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
 																	<h3>{{image.title}}</h3>
@@ -149,9 +128,7 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSource2016" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
@@ -174,9 +151,7 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourceCrochet" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
@@ -200,9 +175,7 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourceQuilts" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
@@ -225,16 +198,10 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourceBC" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
-																<!-- <md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer> -->
+
 															</md-grid-tile>
 														</md-grid-list>
 													</md-tab-body>
@@ -252,15 +219,12 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourceFibers" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
 																	<h3>{{image.title}}</h3>
-																	<!-- <h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3> -->
+
 																</md-grid-tile-footer>
 															</md-grid-tile>
 														</md-grid-list>
@@ -278,15 +242,12 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceMetal" class="md-whiteframe-4dp">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+															<md-grid-tile ng-repeat="image in imgSourceMetal" class="md-whiteframe-4dp" ng-click="showSlideShow(imgSourceMetal, $index)">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
 																	<h3>{{image.title}}</h3>
-																	<!-- <h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3> -->
+
 																</md-grid-tile-footer>
 															</md-grid-tile>
 														</md-grid-list>
@@ -304,9 +265,7 @@
 
 													</md-tab-label>
 													<md-tab-body>
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourcePainting" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
@@ -330,9 +289,7 @@
 													</md-tab-label>
 													<md-tab-body>
 
-														<md-grid-list  md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4"
-        md-row-height-gt-md="1:1" md-row-height="2:2"
-        md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
 															<md-grid-tile ng-repeat="image in imgSourceMatresses" class="md-whiteframe-4dp">
 																<img src="{{image.thumb}}" alt="">
 																<md-grid-tile-footer>
@@ -342,25 +299,6 @@
 																</md-grid-tile-footer>
 															</md-grid-tile>
 														</md-grid-list>
-
-														<!-- <div class="m-p-g">
-
-															<div class="m-p-g__thumbs gallery" data-google-image-layout data-max-height="350">
-
-															<img src="images/matresses/cant_a_girl_get_some_privacy/thumb.jpg" alt="" data-full="images/matresses/cant_a_girl_get_some_privacy/cant_a_girl_get_some_privacy.jpg" class="m-p-g__thumbs-img">
-
-															<img src="images/matresses/cant_a_girl_get_some_privacy_detail/thumb.jpg" alt="" data-full="images/matresses/cant_a_girl_get_some_privacy_detail/cant_a_girl_get_some_privacy_detail.jpg" class="m-p-g__thumbs-img">
-															<img src="images/matresses/hard_night_of_clubbing/thumb.jpg" alt="" data-full="images/matresses/hard_night_of_clubbing/hard-night-of-clubbing.jpg" class="m-p-g__thumbs-img">
-															<img src="images/matresses/mr_big_stuff/thumb.jpg" alt="" data-full="images/matresses/mr_big_stuff/mr-big-stuff.jpg" class="m-p-g__thumbs-img">
-															<img src="images/matresses/mr_big_stuff_detail/thumb.jpg" alt="" data-full="images/matresses/mr_big_stuff_detail/mr-big-stuff-detail.jpg" class="m-p-g__thumbs-img"><img src="images/matresses/oh_how_lady_like/thumb.jpg" alt="" data-full="images/matresses/oh_how_lady_like/oh-how-lady-like.jpg" class="m-p-g__thumbs-img">
-															<img src="images/matresses/oh_how_lady_like_detail/thumb.jpg" alt="" data-full="images/matresses/oh_how_lady_like_detail/oh-how-lady-like-detail.jpg" class="m-p-g__thumbs-img">
-
-														</div>
-
-														<div class="m-p-g__fullscreen"></div>
-
-
-														</div> -->
 
 
 
