@@ -940,8 +940,7 @@
             $scope._mdPanelRef.close();
           };
         },
-        templateUrl: 'popup/showSlideShow.html',
-        panelClass: 'demo-dialog-example',
+        templateUrl: 'popup/slideShow.html',
         position: position,
         trapFocus: true,
         zIndex: 150,
