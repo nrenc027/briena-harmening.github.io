@@ -656,8 +656,8 @@
     ];
 
     $scope.imgSourcePainting = [{
-        thumb: "images/painting/alternations/thumb.jpg",
-        image: "images/painting/alternations/alternations.jpg",
+        thumb: "images/painting/Alternations/thumb.jpg",
+        image: "images/painting/Alternations/Alternations.jpg",
         title: "Alternations",
         materials: "acrylic, paper, oil pastel on canvas",
         dem: "36 in. x 36 in."
