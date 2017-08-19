@@ -950,7 +950,7 @@
         hasBackdrop: true,
       };
 
-      this._mdPanel.open(config);
+      $scope._mdPanel.open(config);
 
     };
 
