@@ -921,6 +921,17 @@
       $scope.hide = function() {
      $mdDialog.hide();
    };
+   $scope.next = function() {
+     while($scope.idx < $scope.arr.length){
+       $scope.idx +=1;
+     }
+
+   };
+   $scope.prev = function(){
+     while($scope.idx > -1){
+       $scope.idx -=1;
+     }
+   }
 
    $scope.cancel = function() {
      $mdDialog.cancel();

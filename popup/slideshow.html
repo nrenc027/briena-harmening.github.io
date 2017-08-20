@@ -5,9 +5,9 @@
   <div class="demo-dialog-content">
 
     <div layout="row" >
-      <md-button class="md-fab menu-btn" layout="column"><md-icon><i class="material-icons">keyboard_arrow_left</i></md-icon></md-button>
+      <md-button class="md-fab menu-btn" layout="column" ng-click="prev()"><md-icon><i class="material-icons">keyboard_arrow_left</i></md-icon></md-button>
       <img class="popImages" flex src="{{arr[idx].image}}">
-      <md-button class="md-fab menu-btn" layout="column"><md-icon><i class="material-icons">keyboard_arrow_right</i></md-icon></md-button>
+      <md-button class="md-fab menu-btn" layout="column" ng-click="next()"><md-icon><i class="material-icons">keyboard_arrow_right</i></md-icon></md-button>
     </div>
     <div class="">
 
