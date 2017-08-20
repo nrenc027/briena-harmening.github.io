@@ -123,6 +123,9 @@ md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolb
 .md-button.md-fab md-icon {
     color: rgb(0, 0, 0)!important;
 }
+.menu-btn md-icon{
+	float: right!important;
+}
 
 
 .container {
