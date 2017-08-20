@@ -915,6 +915,9 @@
     controller: function Ctrl($scope, $mdDialog) {
       $scope.arr = array;
       $scope.idx = index;
+
+      console.log($scope.arr);
+
       $scope.hide = function() {
      $mdDialog.hide();
    };
