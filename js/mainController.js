@@ -915,6 +915,8 @@
     controller: function Ctrl($scope, $mdDialog) {
       $scope.arr = array;
       $scope.idx = index;
+      $scope.img = $scope.arr[$scope.idx].image;
+      $scope.title = $scope.arr[$scope.idx].title;
 
       console.log($scope.arr);
 
@@ -924,12 +926,16 @@
    $scope.next = function() {
      while($scope.idx < $scope.arr.length){
        $scope.idx +=1;
+       $scope.img = $scope.arr[$scope.idx].image;
+       $scope.title = $scope.arr[$scope.idx].title;
      }
 
    };
    $scope.prev = function(){
      while($scope.idx > -1){
        $scope.idx -=1;
+       $scope.img = $scope.arr[$scope.idx].image;
+       $scope.title = $scope.arr[$scope.idx].title;
      }
    }
 
