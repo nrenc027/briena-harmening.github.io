@@ -120,6 +120,9 @@ md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolb
 	font-family: 'Dosis', sans-serif !important;
 	/*margin-top: 3em !important;*/
 }
+.md-button.md-fab md-icon {
+    color: rgb(0, 0, 0)!important;
+}
 
 
 .container {
