@@ -33,12 +33,16 @@ footer{
 	/*text-align: center;*/
 	color:  #000;
 	font-size: 1.1em;
-	
+
 }
 
 md-dialog{
-	max-width: 95%!important;
-	min-width: 85%!important;
+	max-width: 75%!important;
+	min-width: 55%!important;
+}
+.popImages{
+	max-width: 55%;
+	padding: 1em;
 }
 .footer-text{
 	margin-left: 1.3em;
