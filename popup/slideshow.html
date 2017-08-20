@@ -1,13 +1,19 @@
 <md-dialog>
-<div role="dialog" aria-label="Slide Show!" layout="column" layout-align="center center">
-
+<div role="dialog" aria-label="Slide preview" layout="column" layout-align="center center">
+<md-toolbar>
+  <div layout="row">
+    <md-button md-autofocus flex class="menu-btn md-fab" ng-click="hide()">
+      <md-icon><i class="material-icons">close</i></md-icon>
+    </md-button>
+  </div>
+</md-toolbar>
 
   <div class="demo-dialog-content">
 
     <div layout="row" >
-      <md-button class="md-fab menu-btn" layout="column" ng-click="prev()"><md-icon><i class="material-icons">keyboard_arrow_left</i></md-icon></md-button>
+
       <img class="popImages" flex src="{{img}}">
-      <md-button class="md-fab menu-btn" layout="column" ng-click="next()"><md-icon><i class="material-icons">keyboard_arrow_right</i></md-icon></md-button>
+
     </div>
     <div class="">
 
@@ -17,10 +23,6 @@
 
   </div>
 
-  <div layout="row" class="demo-dialog-button">
-    <md-button md-autofocus flex class="md-primary md-fab" ng-click="hide()">
-      Close
-    </md-button>
-  </div>
+
 </div>
 </md-dialog>

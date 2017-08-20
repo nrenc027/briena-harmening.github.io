@@ -923,23 +923,7 @@
       $scope.hide = function() {
      $mdDialog.hide();
    };
-   $scope.next = function() {
-     console.log($scope.idx);
-     while($scope.idx < $scope.arr.length){
-       $scope.idx +=1;
-       $scope.img = $scope.arr[$scope.idx].image;
-       $scope.title = $scope.arr[$scope.idx].title;
-     }
-
-   };
-   $scope.prev = function(){
-     console.log($scope.idx);
-     while($scope.idx > -1){
-       $scope.idx -=1;
-       $scope.img = $scope.arr[$scope.idx].image;
-       $scope.title = $scope.arr[$scope.idx].title;
-     }
-   }
+  
 
    $scope.cancel = function() {
      $mdDialog.cancel();
