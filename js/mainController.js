@@ -1,6 +1,6 @@
 (function() {
 
-  var AppCtrl = function($mdPanel, $scope, ngMaterial) {
+  var AppCtrl = function($mdPanel, $scope, $mdDialog, ngMaterial) {
 
     $scope._mdPanel = $mdPanel;
 
@@ -909,53 +909,81 @@
 
     ];
 
-    $scope.showSlideShow = function(array, index) {
 
-      var position = this._mdPanel.newPanelPosition()
-        .absolute()
-        .right()
-        .top();
+  $scope.showDialog = function(ev, array, $index) {
+  $mdDialog.show({
+    controller: function Ctrl($scope, $mdDialog) {
+      $scope.hide = function() {
+     $mdDialog.hide();
+   };
 
-      var animation = $scope._mdPanel.newPanelAnimation();
-      // animation.duration($scope.duration || $scope.separateDurations);
-      animation.openFrom({
-        top: document.documentElement.clientHeight,
-        left: document.documentElement.clientWidth / 2 - 250
-      });
-      animation.closeTo({
-        top: document.documentElement.clientHeight,
-        left: document.documentElement.clientWidth / 2 - 250
-      });
+   $scope.cancel = function() {
+     $mdDialog.cancel();
+   };
 
-      animation.withAnimation($scope._mdPanel.animation.FADE);
-
-
-      var config = {
-        animation: animation,
-        attachTo: angular.element(document.body),
-        controller: function Ctrl($scope, mdPanelRef) {
-          $scope._mdPanelRef = mdPanelRef;
-
-          $scope.closeDialog = function() {
-            $scope._mdPanelRef.close();
-          };
-        },
-        templateUrl: 'popup/slideshow.html',
-        position: position,
-        trapFocus: true,
-        zIndex: 150,
-        clickOutsideToClose: true,
-        clickEscapeToClose: true,
-        hasBackdrop: true,
+   $scope.answer = function(answer) {
+     $mdDialog.hide(answer);
       };
+    },
+    templateUrl: 'popup/slideshow.html',
+    parent: angular.element(document.body),
+    targetEvent: ev,
+    clickOutsideToClose:true
+  })
+      .then(function(answer) {
+        $scope.status = 'You said the information was "' + answer + '".';
+      }, function() {
+        $scope.status = 'You cancelled the dialog.';
+      });
+};
 
-      $scope._mdPanel.open(config);
-
-    };
+    // $scope.showSlideShow = function(array, index) {
+    //
+    //   var position = this._mdPanel.newPanelPosition()
+    //     .absolute()
+    //     .right()
+    //     .top();
+    //
+    //   var animation = $scope._mdPanel.newPanelAnimation();
+    //   // animation.duration($scope.duration || $scope.separateDurations);
+    //   animation.openFrom({
+    //     top: document.documentElement.clientHeight,
+    //     left: document.documentElement.clientWidth / 2 - 250
+    //   });
+    //   animation.closeTo({
+    //     top: document.documentElement.clientHeight,
+    //     left: document.documentElement.clientWidth / 2 - 250
+    //   });
+    //
+    //   animation.withAnimation($scope._mdPanel.animation.FADE);
+    //
+    //
+    //   var config = {
+    //     animation: animation,
+    //     attachTo: angular.element(document.body),
+        // controller: function Ctrl($scope, mdPanelRef) {
+        //   $scope._mdPanelRef = mdPanelRef;
+        //
+        //   $scope.closeDialog = function() {
+        //     $scope._mdPanelRef.close();
+        //   };
+        // },
+    //     templateUrl: 'popup/slideshow.html',
+    //     position: position,
+    //     trapFocus: true,
+    //     zIndex: 150,
+    //     clickOutsideToClose: true,
+    //     clickEscapeToClose: true,
+    //     hasBackdrop: true,
+    //   };
+    //
+    //   $scope._mdPanel.open(config);
+    //
+    // };
 
 
   };
-  AppCtrl.$inject = ['$mdPanel', '$scope'];
+  AppCtrl.$inject = ['$mdPanel', '$scope','$mdDialog'];
   var app = angular.module('App', ['ngMaterial']);
   app.controller('AppCtrl', AppCtrl);
 
