@@ -7,7 +7,12 @@
     <div layout="row" >
       <img class="popImages" flex src="{{arr[idx].image}}">
     </div>
-    <h5>{{arr[idx].title}}</h5>
+    <div class="" layout="row">
+      <md-button class="md-fab"><md-icon><i class="material-icons">keyboard_arrow_left</i></md-icon></md-button>
+        <h5>{{arr[idx].title}}</h5>
+        <md-button class="md-fab"><md-icon><i class="material-icons">keyboard_arrow_right</i></md-icon></md-button>
+    </div>
+
   </div>
 
   <div layout="row" class="demo-dialog-button">
