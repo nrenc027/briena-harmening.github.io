@@ -910,9 +910,11 @@
     ];
 
 
-  $scope.showDialog = function(ev, array, $index) {
+  $scope.showDialog = function(ev, array, index) {
   $mdDialog.show({
     controller: function Ctrl($scope, $mdDialog) {
+      $scope.arr = array;
+      $scope.idx = index;
       $scope.hide = function() {
      $mdDialog.hide();
    };

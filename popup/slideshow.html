@@ -1,20 +1,17 @@
 <md-dialog>
 <div role="dialog" aria-label="Slide Show!" layout="column" layout-align="center center">
-  <md-toolbar>
-    <div class="md-toolbar-tools">
-      <h2>Surprise!</h2>
-    </div>
-  </md-toolbar>
+  
 
   <div class="demo-dialog-content">
 
     <div layout="row" >
-      <img flex alt="Delicious donut" src="img/donut.jpg">
+      <img flex src="{{arr[idx].image]}}">
     </div>
+    <h5>{{arr[idx].title}}</h5>
   </div>
 
   <div layout="row" class="demo-dialog-button">
-    <md-button md-autofocus flex class="md-primary" ng-click="Ctrl.hide()">
+    <md-button md-autofocus flex class="md-primary" ng-click="hide()">
       Close
     </md-button>
   </div>
