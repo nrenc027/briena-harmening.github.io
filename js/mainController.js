@@ -940,7 +940,7 @@
             $scope._mdPanelRef.close();
           };
         },
-        templateUrl: 'popup/slideShow.html',
+        templateUrl: 'popup/slideshow.html',
         position: position,
         trapFocus: true,
         zIndex: 150,
