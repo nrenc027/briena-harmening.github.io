@@ -918,12 +918,13 @@
       $scope.img = $scope.arr[$scope.idx].image;
       $scope.title = $scope.arr[$scope.idx].title;
 
-      console.log($scope.arr);
+
 
       $scope.hide = function() {
      $mdDialog.hide();
    };
    $scope.next = function() {
+     console.log($scope.arr.length);
      while($scope.idx < $scope.arr.length){
        $scope.idx +=1;
        $scope.img = $scope.arr[$scope.idx].image;
@@ -932,6 +933,7 @@
 
    };
    $scope.prev = function(){
+     console.log($scope.arr.length);
      while($scope.idx > -1){
        $scope.idx -=1;
        $scope.img = $scope.arr[$scope.idx].image;
