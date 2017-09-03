@@ -40,9 +40,7 @@ md-dialog{
 	max-width: 95%!important;
 	min-width: 55%!important;
 }
-.galleryThumbImage{
-	max-height: 4em;
-}
+
 .popImages{
 	max-Height: 22em;
 	padding: .2em;
@@ -349,7 +347,9 @@ md-grid-tile-footer{
 	padding: .3em 0;
 }
 
-
+.galleryThumbImage{
+	max-width: 4em;
+}
 
 .md-title{
 	color:#000 !important;
