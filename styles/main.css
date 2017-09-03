@@ -50,6 +50,7 @@ md-dialog{
 }
 .popThumbImages{
 	max-height: 2em;
+	padding: 0 .1em;
 }
 .footer-text{
 	margin-left: 1.3em;
