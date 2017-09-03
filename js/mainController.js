@@ -1022,8 +1022,9 @@
           controller: function Ctrl($scope, $mdDialog) {
             $scope.arr = array;
             $scope.idx = index;
-            $scope.img = $scope.arr[$scope.idx].image;
-            $scope.title = $scope.arr[$scope.idx].title;
+            console.log($scope.arr);
+            // $scope.img = $scope.arr[$scope.idx].image;
+            // $scope.title = $scope.arr[$scope.idx].title;
 
 
 
