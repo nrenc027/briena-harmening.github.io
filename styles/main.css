@@ -37,8 +37,11 @@ footer{
 }
 
 md-dialog{
-	max-width: 75%!important;
+	max-width: 95%!important;
 	min-width: 55%!important;
+}
+.galleryThumbImage{
+	max-height: 4em;
 }
 .popImages{
 	max-Height: 22em;
