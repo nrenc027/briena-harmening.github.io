@@ -44,6 +44,9 @@ md-dialog{
 	max-Height: 22em;
 	padding: .2em;
 }
+.thumbRow{
+	display: inline-flex !important;
+}
 .footer-text{
 	margin-left: 1.3em;
 }
