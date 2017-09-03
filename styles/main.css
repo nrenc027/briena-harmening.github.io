@@ -341,7 +341,7 @@ md-grid-tile-footer{
 
 
 }
-@media (min-width: 27em){
+@media (min-width: 26em){
 	.desktopView{
 		display: inherit;
 	}
