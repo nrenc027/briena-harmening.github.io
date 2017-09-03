@@ -365,7 +365,7 @@ md-grid-tile-footer{
 }
 .popThumbImages{
 	min-height: 2em;
-	padding: 0 .5em;
+	padding: 0 .1em;
 }
 md-grid-tile-footer {
 	max-height:2em;
