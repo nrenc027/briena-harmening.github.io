@@ -259,8 +259,8 @@ md-grid-tile  img{
 md-grid-tile-footer{
 	height:4.2em !important;
 	text-align: left !important;
-	background: rgba(0,0,0,0.58) !important;
-	color: #fff !important;
+	background: #fff !important;
+	color: #000 !important;
 }
 
 @media (min-height: 85em) {

@@ -25,6 +25,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 	<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-114/svg-assets-cache.js"></script>
 	<script src="https://ettrics.github.io/material-photo-gallery/dist/js/material-photo-gallery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 
 </head>
 
@@ -93,222 +94,15 @@
 								<md-content style="margin-top:1.5em; background-color:transparent;">
 									<md-card class="">
 										<div class="contentContainer">
-											<md-tabs md-dynamic-height>
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/2015/DSC02758/thumb.jpg);" alt="2015 Collection" aria-label="2015 Collection">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">2015 Collection</p>
+											<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
+														<md-grid-tile ng-repeat="gallery in gallerySource" class="md-whiteframe-4dp" ng-click="showDialog($event, gallery.src, $index)">
+															<img src="{{gallery.thumb}}" alt="" >
+															<md-grid-tile-footer>
+																<h3>{{gallery.gallery}}</h3>
+															</md-grid-tile-footer>
+														</md-grid-tile>
+													</md-grid-list>
 
-													</md-tab-label>
-													<md-tab-body>
-
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSource2015" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSource2015, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/2016/IMG_0761/thumb.jpg);" alt="2016 Collection" aria-label="2016 Collection">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">2016 Collection</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSource2016" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSource2016, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/crochet/DSC02552/thumb.jpg);" alt="Crochet Works" aria-label="Crochet works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Crochet Works</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceCrochet" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSourceCrochet, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-													</md-tab-body>
-
-												</md-tab>
-
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/quilts/DSC03850/thumb.jpg);" alt="Quilt Works" aria-label="Quilt Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Quilt Works</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceQuilts" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSourceQuilts, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/BC_Emb/DSCN0973/thumb.jpg);" alt="Birth-Control Embroidery Works" aria-label="Birth-Control Embroidery Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Birth Control Embroidery</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceBC" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSourceBC, $index)">
-																<img src="{{image.thumb}}" alt="">
-
-															</md-grid-tile>
-														</md-grid-list>
-													</md-tab-body>
-
-												</md-tab>
-
-
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/fibers/HarmeningArizona/thumb.jpg);" alt="Fiber Works" aria-label="Fiber Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Fiber Works</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceFibers" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSourceFibers, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/metalica/DSCN0068/thumb.jpg);" alt="Metalica Works" aria-label="Metalica Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Metalica Embroidery</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceMetal" class="md-whiteframe-4dp" ng-click="showDialog($event, imgSourceMetal, $index)">
-																<img src="{{image.thumb}}" alt="">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/painting/DSC00393/thumb.jpg);" alt="Painting Works" aria-label="Painting Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Paintings</p>
-
-													</md-tab-label>
-													<md-tab-body>
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourcePainting" class="md-whiteframe-4dp">
-																<img src="{{image.thumb}}" alt="" ng-click="showDialog($event, imgSourcePainting, $index)">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-													</md-tab-body>
-
-												</md-tab>
-
-												<md-tab>
-													<md-tab-label>
-														<md-button class="md-fab" style="background:url(images/matresses/oh_how_lady_like/thumb.jpg);" alt="Matress Works" aria-label="Matress Works">
-														</md-button>
-														<br>
-														<p style="margin-top:-.7em;">Matresses</p>
-
-													</md-tab-label>
-													<md-tab-body>
-
-														<md-grid-list md-cols-xs="1" md-cols-sm="2" md-cols-md="4" md-cols-gt-md="4" md-row-height-gt-md="1:1" md-row-height="2:2" md-gutter="12px" md-gutter-gt-sm="8px">
-															<md-grid-tile ng-repeat="image in imgSourceMatresses" class="md-whiteframe-4dp">
-																<img src="{{image.thumb}}" alt="" ng-click="showDialog($event, imgSourceMatresses, $index)">
-																<md-grid-tile-footer>
-																	<h3>{{image.title}}</h3>
-																	<h3>{{image.materials}}</h3>
-																	<h3>{{image.dem}}</h3>
-																</md-grid-tile-footer>
-															</md-grid-tile>
-														</md-grid-list>
-
-
-
-													</md-tab-body>
-
-												</md-tab>
-
-
-
-											</md-tabs>
 
 
 										</div>

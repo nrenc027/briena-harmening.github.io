@@ -4,6 +4,61 @@
 
     $scope._mdPanel = $mdPanel;
 
+    $scope.gallerySource = [{
+        thumb: "images/2015/DSC02758/thumb.jpg",
+        gallery: "2015 Collection",
+        src: $scope.imgSource2015
+      },
+      {
+        thumb: "images/2016/IMG_0761/thumb.jpg",
+        gallery: "2016 Collection",
+        src: $scope.imgSource2016
+      },
+      {
+        thumb: "images/2017/1/thumb.jpg",
+        gallery: "2017 Collection",
+        src: $scope.imgSource2017
+      },
+      {
+        thumb: "images/crochet/DSC02552/thumb.jpg",
+        gallery: "Crochet Works",
+        src: $scope.imgSourceCrochet
+      },
+      {
+        thumb: "images/quilts/DSC03850/thumb.jpg",
+        gallery: "Quilt Works",
+        src: $scope.imgSourceQuilts
+      },
+      {
+        thumb: "images/BC_Emb/DSCN0973/thumb.jpg",
+        gallery: "Birth Controll Embroidery",
+        src: $scope.imgSourceBC
+      },
+      {
+        thumb: "images/fibers/HarmeningArizona/thumb.jpg",
+        gallery: "Fiber Works",
+        src: $scope.imgSourceFibers
+      },
+      {
+        thumb: "images/metalica/DSCN0068/thumb.jpg",
+        gallery: "Metalica Embroidery",
+        src: $scope.imgSourceMetal
+      },
+      {
+        thumb: "images/painting/DSC00393/thumb.jpg",
+        gallery: "Paintings",
+        src: $scope.imgSourcePainting
+      },
+      {
+        thumb: "images/matresses/oh_how_lady_like/thumb.jpg",
+        gallery: "Mattresses",
+        src: $scope.imgSourceMatresses
+      }
+      // {
+      //   thumb: "images/2015/DSC02758/thumb.jpg",
+      //   gallery: "Thesis"
+      // }
+    ];
 
     $scope.imgSource2015 = [{
         thumb: "images/2015/DSC02758/thumb.jpg",
@@ -39,13 +94,6 @@
         title: "Something is Wrong (Detail)",
         materials: "Crochet, spray paint, and acrylic on canvas",
         dem: "34 in. x 34 in."
-      },
-      {
-        thumb: "images/2015/DSC03028/thumb.jpg",
-        image: "images/2015/DSC03028/DSC03028.jpg",
-        title: "I Miss The Old Me",
-        materials: "Crochet, acrylic, spray paint, and latex on canvas",
-        dem: "31 in. x 29 in."
       },
       {
         thumb: "images/2015/DSC03029/thumb.jpg",
@@ -135,6 +183,41 @@
     ];
 
     $scope.imgSource2016 = [{
+        thumb: "images/2016/1/thumb.jpg",
+        image: "images/2016/1/1BrienaHarmeningItMadeMeSecondGuessMyself.jpg",
+        title: "It made me second guess myself"
+      }, {
+        thumb: "images/2016/2/thumb.jpg",
+        image: "images/2016/2/2BrienaHarmeningItMadeMeSecondGuessMyself(sideview).jpg",
+        title: "It made me second guess myself (side detail)"
+      }, {
+        thumb: "images/2016/7/thumb.jpg",
+        image: "images/2016/7/7BrienaHarmeningButYouPlayedYourself.jpg",
+        title: "But you played yourself"
+      },
+      {
+        thumb: "images/2016/8/thumb.jpg",
+        image: "images/2016/8/8BrienaHarmeningButYouPlayedYourselfsideview.jpg",
+        title: "But you played yourself (side detail)"
+      },
+      {
+        thumb: "images/2016/9/thumb.jpg",
+        image: "images/2016/9/9BrienaHarmeningHumans.jpg",
+        title: "Humans"
+      },
+      {
+        thumb: "images/2016/10/thumb.jpg",
+        image: "images/2016/10/10BrienaHarmeningHumans(Sideview).jpg",
+        title: "Humans (side detail)"
+      },
+      {
+        thumb: "images/2016/4/thumb.jpg",
+        image: "images/2016/4/4.jpg",
+        title: "It’s so hot",
+        materials: "Acrylic, thread, spray paint on canvas",
+        dem: "12 in. x 12 in."
+      },
+      {
         thumb: "images/2016/4/thumb.jpg",
         image: "images/2016/4/4.jpg",
         title: "It’s so hot",
@@ -170,6 +253,44 @@
         dem: "36 in. x 72 in."
       },
     ];
+
+    $scope.imgSource2017 = [{
+        thumb: "images/2017/1/thumb.jpg",
+        image: "images/2017/1/File_002.jpg",
+        title: "Do you know what communication means?",
+        materials: "Acrylic, latex, and spray paint on wood",
+        dem: "20 in x 21 in. x 2 in."
+      },
+      {
+        thumb: "images/2017/2/thumb.jpg",
+        image: "images/2017/2/File_003.jpg",
+        title: "Its real",
+        materials: "Acrylic, Latex, spray paint, orange mesh, tape, and string, on canvas",
+        dem: "30 in. X 28 in."
+      },
+      {
+        thumb: "images/2017/3/thumb.jpg",
+        image: "images/2017/3/File_005.jpg",
+        title: "Self titled",
+        materials: "Spray paint and latex on wood",
+        dem: "20 in. x 16 in. x 3in."
+      },
+      {
+        thumb: "images/2017/4/thumb.jpg",
+        image: "images/2017/4/File_006.jpg",
+        title: "Saw this one coming",
+        materials: "Latex, spray paint, and fabric on wood",
+        dem: "18 in. x 25 in."
+      },
+      {
+        thumb: "images/2017/5/thumb.jpg",
+        image: "images/2017/5/File_007.jpg",
+        title: "The future is open",
+        materials: "Latex, spray paint, acrylic, and oil pastels on canvas",
+        dem: "30 in. x 24 in."
+      }
+    ];
+
 
     $scope.imgSourceCrochet = [{
         thumb: "images/crochet/DSC02035/thumb.jpg",
@@ -235,13 +356,6 @@
         dem: "37 in. x 40 in."
       },
       {
-        thumb: "images/crochet/DSC02554/thumb.jpg",
-        image: "images/crochet/DSC02554/DSC02554.jpg",
-        title: "Yo",
-        materials: "thread, acrylic, spray paint on canvas",
-        dem: "26 in. x 29 in."
-      },
-      {
         thumb: "images/crochet/DSC02555/thumb.jpg",
         image: "images/crochet/DSC02555/DSC02555.jpg",
         title: "I moved here for you fucker",
@@ -254,13 +368,6 @@
         title: "It’s so hot",
         materials: "Acrylic, thread, spray paint on canvas",
         dem: "12 in. x 12 in."
-      },
-      {
-        thumb: "images/crochet/DSC02749/thumb.jpg",
-        image: "images/crochet/DSC02749/DSC02749.jpg",
-        title: "Everything can’t be Perfect ",
-        materials: "thread, acrylic, spray paint on canvas",
-        dem: "30 in. x 30 in."
       },
       {
         thumb: "images/crochet/P5052538/thumb.jpg",
@@ -910,40 +1017,32 @@
     ];
 
 
-  $scope.showDialog = function(ev, array, index) {
-  $mdDialog.show({
-    controller: function Ctrl($scope, $mdDialog) {
-      $scope.arr = array;
-      $scope.idx = index;
-      $scope.img = $scope.arr[$scope.idx].image;
-      $scope.title = $scope.arr[$scope.idx].title;
+    $scope.showDialog = function(ev, array, index) {
+      $mdDialog.show({
+          controller: function Ctrl($scope, $mdDialog) {
+            $scope.arr = array;
+            $scope.idx = index;
+            $scope.img = $scope.arr[$scope.idx].image;
+            $scope.title = $scope.arr[$scope.idx].title;
 
 
 
-      $scope.hide = function() {
-     $mdDialog.hide();
-   };
-  
+            $scope.hide = function() {
+              $mdDialog.hide();
+            };
 
-   $scope.cancel = function() {
-     $mdDialog.cancel();
-   };
 
-   $scope.answer = function(answer) {
-     $mdDialog.hide(answer);
-      };
-    },
-    templateUrl: 'popup/slideshow.html',
-    parent: angular.element(document.body),
-    targetEvent: ev,
-    clickOutsideToClose:true
-  })
-      .then(function(answer) {
-        $scope.status = 'You said the information was "' + answer + '".';
-      }, function() {
-        $scope.status = 'You cancelled the dialog.';
-      });
-};
+            $scope.cancel = function() {
+              $mdDialog.cancel();
+            };
+
+          },
+          templateUrl: 'popup/slideshow.html',
+          parent: angular.element(document.body),
+          targetEvent: ev,
+          clickOutsideToClose: true
+        })
+    };
 
     // $scope.showSlideShow = function(array, index) {
     //
@@ -969,13 +1068,13 @@
     //   var config = {
     //     animation: animation,
     //     attachTo: angular.element(document.body),
-        // controller: function Ctrl($scope, mdPanelRef) {
-        //   $scope._mdPanelRef = mdPanelRef;
-        //
-        //   $scope.closeDialog = function() {
-        //     $scope._mdPanelRef.close();
-        //   };
-        // },
+    // controller: function Ctrl($scope, mdPanelRef) {
+    //   $scope._mdPanelRef = mdPanelRef;
+    //
+    //   $scope.closeDialog = function() {
+    //     $scope._mdPanelRef.close();
+    //   };
+    // },
     //     templateUrl: 'popup/slideshow.html',
     //     position: position,
     //     trapFocus: true,
@@ -991,9 +1090,8 @@
 
 
   };
-  AppCtrl.$inject = ['$mdPanel', '$scope','$mdDialog'];
+  AppCtrl.$inject = ['$mdPanel', '$scope', '$mdDialog'];
   var app = angular.module('App', ['ngMaterial']);
   app.controller('AppCtrl', AppCtrl);
-
 
 }());
