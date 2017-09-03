@@ -341,8 +341,21 @@ md-grid-tile-footer{
 
 
 }
-
+@media (min-width: 27em){
+	.desktopView{
+		display: inherit;
+	}
+	.mobileView{
+		display: none;
+	}
+}
 @media (max-width: 26em){
+.desktopView{
+	display: none;
+}
+.mobileView{
+	display: inherit;
+}
 .social{
 	padding: .3em 0;
 }
