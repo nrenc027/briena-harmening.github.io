@@ -33,6 +33,9 @@ footer{
 	color:  #fafafa;
 	font-size: 1.1em;
 }
+md-dialog{
+	min-height: 400px;
+}
 .column{
 	padding: 1em;
 	box-sizing: border-box;
