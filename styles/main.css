@@ -350,6 +350,10 @@ md-grid-tile-footer{
 .galleryThumbImage{
 	max-width: 4em;
 }
+.popThumbImages{
+	min-height: 2em;
+	max-height: 5em;
+}
 md-grid-tile-footer {
 	max-height:2em;
 }
