@@ -1079,10 +1079,12 @@
             $scope.arr = array;
             //$scope.idx = index;
             //console.log($scope.arr);
-            // $scope.img = $scope.arr[$scope.idx].image;
-            // $scope.title = $scope.arr[$scope.idx].title;
+            $scope.img = $scope.arr[0].image;
+            $scope.title = $scope.arr[0].title;
 
-
+            $scope.changeImage = (index) =>{
+              console.log(index);
+            }
 
             $scope.hide = function() {
               $mdDialog.hide();

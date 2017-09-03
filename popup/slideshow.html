@@ -10,7 +10,7 @@
 
   <div class="demo-dialog-content">
 
-    <div layout="row" >
+    <div >
 
       <img class="popImages" flex src="{{img}}">
       <h5 layout="column">{{title}}</h5>
@@ -18,7 +18,7 @@
     <div class="">
 
         <div ng-repeat="image in arr">
-            <img class="popImages"  src="{{image.image}}">
+            <a ng-click="changeImage($index)"><img class="popImages"  src="{{image.image}}"></a>
         </div>
 
     </div>
