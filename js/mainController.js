@@ -1072,12 +1072,13 @@
       // }
     ];
     $scope.showDialog = function(ev, array) {
-      console.log(array);
+
       $mdDialog.show({
           controller: function Ctrl($scope, $mdDialog) {
+            console.log(array);
             $scope.arr = array;
-            $scope.idx = index;
-            console.log($scope.arr);
+            //$scope.idx = index;
+            //console.log($scope.arr);
             // $scope.img = $scope.arr[$scope.idx].image;
             // $scope.title = $scope.arr[$scope.idx].title;
 
