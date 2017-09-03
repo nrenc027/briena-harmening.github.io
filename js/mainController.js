@@ -1086,6 +1086,8 @@
               console.log(index);
               $scope.img = $scope.arr[index].image;
               $scope.title = $scope.arr[index].title;
+              console.log($scope.img);
+              console.log($scope.title);
 
             }
 
