@@ -8,7 +8,7 @@
   </div>
 </md-toolbar>
 
-  <div class="demo-dialog-content">
+  <div class="demo-dialog-content" hide-xs>
 
     <div >
 
@@ -19,6 +19,24 @@
 
         <div ng-repeat="image in arr">
             <a ng-click="changeImage($index)"><img class="popThumbImages"  src="{{image.image}}"></a>
+        </div>
+
+    </div>
+
+  </div>
+
+  <div class="demo-dialog-content" show-xs>
+
+    <!-- <div >
+
+      <img class="popImages" flex src="{{img}}">
+      <h5 layout="column">{{title}}</h5>
+    </div> -->
+    <div>
+
+        <div ng-repeat="image in arr">
+            <img flex  src="{{image.image}}">
+            <h5>{{image.title}}</h5>
         </div>
 
     </div>
