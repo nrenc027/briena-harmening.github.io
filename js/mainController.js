@@ -1084,6 +1084,9 @@
 
             $scope.changeImage = (index) =>{
               console.log(index);
+              $scope.img = $scope.arr[index].image;
+              $scope.title = $scope.arr[index].title;
+
             }
 
             $scope.hide = function() {
