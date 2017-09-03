@@ -1016,8 +1016,63 @@
 
     ];
 
-
-    $scope.showDialog = function(ev, array, index) {
+    $scope.gallerySource = [{
+        thumb: "images/2015/DSC02758/thumb.jpg",
+        gallery: "2015 Collection",
+        src: $scope.imgSource2015
+      },
+      {
+        thumb: "images/2016/IMG_0761/thumb.jpg",
+        gallery: "2016 Collection",
+        src: $scope.imgSource2016
+      },
+      {
+        thumb: "images/2017/1/thumb.jpg",
+        gallery: "2017 Collection",
+        src: $scope.imgSource2017
+      },
+      {
+        thumb: "images/crochet/DSC02552/thumb.jpg",
+        gallery: "Crochet Works",
+        src: $scope.imgSourceCrochet
+      },
+      {
+        thumb: "images/quilts/DSC03850/thumb.jpg",
+        gallery: "Quilt Works",
+        src: $scope.imgSourceQuilts
+      },
+      {
+        thumb: "images/BC_Emb/DSCN0973/thumb.jpg",
+        gallery: "Birth Controll Embroidery",
+        src: $scope.imgSourceBC
+      },
+      {
+        thumb: "images/fibers/HarmeningArizona/thumb.jpg",
+        gallery: "Fiber Works",
+        src: $scope.imgSourceFibers
+      },
+      {
+        thumb: "images/metalica/DSCN0068/thumb.jpg",
+        gallery: "Metalica Embroidery",
+        src: $scope.imgSourceMetal
+      },
+      {
+        thumb: "images/painting/DSC00393/thumb.jpg",
+        gallery: "Paintings",
+        src: $scope.imgSourcePainting
+      },
+      {
+        thumb: "images/matresses/oh_how_lady_like/thumb.jpg",
+        gallery: "Mattresses",
+        src: $scope.imgSourceMatresses
+      }
+      // {
+      //   thumb: "images/2015/DSC02758/thumb.jpg",
+      //   gallery: "Thesis"
+      // }
+    ];
+    $scope.showDialog = function(ev, array) {
+      console.log(array);
       $mdDialog.show({
           controller: function Ctrl($scope, $mdDialog) {
             $scope.arr = array;
