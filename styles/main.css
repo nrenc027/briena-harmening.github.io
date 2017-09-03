@@ -47,6 +47,9 @@ md-dialog{
 .thumbRow{
 	display: inline-flex !important;
 }
+.popThumbImages{
+	max-height: 2em;
+}
 .footer-text{
 	margin-left: 1.3em;
 }
