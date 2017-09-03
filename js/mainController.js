@@ -218,13 +218,6 @@
         dem: "12 in. x 12 in."
       },
       {
-        thumb: "images/2016/4/thumb.jpg",
-        image: "images/2016/4/4.jpg",
-        title: "It’s so hot",
-        materials: "Acrylic, thread, spray paint on canvas",
-        dem: "12 in. x 12 in."
-      },
-      {
         thumb: "images/2016/IMG_0761/thumb.jpg",
         image: "images/2016/IMG_0761/IMG_0761.jpg",
         title: "Bye Now",
