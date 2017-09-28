@@ -573,182 +573,182 @@
 
     $scope.imgSourceMetal = [{
         thumb: "images/metalica/DSCN0068/thumb.jpg",
-        image: "images/crochet/DSCN0068/DSCN0068.jpg",
+        image: "images/metalica/DSCN0068/DSCN0068.jpg",
         title: "Metalica(Installation)"
       },
       {
         thumb: "images/metalica/DSCN0923/thumb.jpg",
-        image: "images/crochet/DSCN0923/DSCN0923.jpg",
+        image: "images/metalica/DSCN0923/DSCN0923.jpg",
         title: "Battery"
       },
       {
         thumb: "images/metalica/DSCN0924/thumb.jpg",
-        image: "images/crochet/DSCN0924/DSCN0924.jpg",
+        image: "images/metalica/DSCN0924/DSCN0924.jpg",
         title: "Motor Breath"
       },
       {
         thumb: "images/metalica/DSCN0926/thumb.jpg",
-        image: "images/crochet/DSCN0926/DSCN0926.jpg",
+        image: "images/metalica/DSCN0926/DSCN0926.jpg",
         title: "King Nothing"
       },
       {
         thumb: "images/metalica/DSCN0927/thumb.jpg",
-        image: "images/crochet/DSCN0927/DSCN0927.jpg",
+        image: "images/metalica/DSCN0927/DSCN0927.jpg",
         title: "Creeping Death"
       },
       {
         thumb: "images/metalica/DSCN0928/thumb.jpg",
-        image: "images/crochet/DSCN0928/DSCN0928.jpg",
+        image: "images/metalica/DSCN0928/DSCN0928.jpg",
         title: "Last Caress"
       },
       {
         thumb: "images/metalica/DSCN0929/thumb.jpg",
-        image: "images/crochet/DSCN0929/DSCN0929.jpg",
+        image: "images/metalica/DSCN0929/DSCN0929.jpg",
         title: "Ride the Lightning"
       },
       {
         thumb: "images/metalica/DSCN0930/thumb.jpg",
-        image: "images/crochet/DSCN0930/DSCN0930.jpg",
+        image: "images/metalica/DSCN0930/DSCN0930.jpg",
         title: "Fuel"
       },
       {
         thumb: "images/metalica/DSCN0931/thumb.jpg",
-        image: "images/crochet/DSCN0931/DSCN0931.jpg",
+        image: "images/metalica/DSCN0931/DSCN0931.jpg",
         title: "Whiplash"
       },
       {
         thumb: "images/metalica/DSCN0932/thumb.jpg",
-        image: "images/crochet/DSCN0932/DSCN0932.jpg",
+        image: "images/metalica/DSCN0932/DSCN0932.jpg",
         title: "Anesthesia Pulling Teeth"
       },
       {
         thumb: "images/metalica/DSCN0933/thumb.jpg",
-        image: "images/crochet/DSCN0933/DSCN0933.jpg",
+        image: "images/metalica/DSCN0933/DSCN0933.jpg",
         title: "Wherever I May Roam"
       },
       {
         thumb: "images/metalica/DSCN0934/thumb.jpg",
-        image: "images/crochet/DSCN0934/DSCN0934.jpg",
+        image: "images/metalica/DSCN0934/DSCN0934.jpg",
         title: "Justice for All"
       },
       {
         thumb: "images/metalica/DSCN0936/thumb.jpg",
-        image: "images/crochet/DSCN0936/DSCN0936.jpg",
+        image: "images/metalica/DSCN0936/DSCN0936.jpg",
         title: "Fight Fire with Fire"
       },
       {
         thumb: "images/metalica/DSCN0937/thumb.jpg",
-        image: "images/crochet/DSCN0937/DSCN0937.jpg",
+        image: "images/metalica/DSCN0937/DSCN0937.jpg",
         title: "Seek and Destroy"
       },
       {
         thumb: "images/metalica/DSCN0939/thumb.jpg",
-        image: "images/crochet/DSCN0939/DSCN0939.jpg",
+        image: "images/metalica/DSCN0939/DSCN0939.jpg",
         title: "Fade to Black"
       },
       {
         thumb: "images/metalica/DSCN0940/thumb.jpg",
-        image: "images/crochet/DSCN0940/DSCN0940.jpg",
+        image: "images/metalica/DSCN0940/DSCN0940.jpg",
         title: "Hit the Lights"
       },
       {
         thumb: "images/metalica/DSCN0942/thumb.jpg",
-        image: "images/crochet/DSCN0942/DSCN0942.jpg",
+        image: "images/metalica/DSCN0942/DSCN0942.jpg",
         title: "The Thing that should not be"
       },
       {
         thumb: "images/metalica/DSCN0943/thumb.jpg",
-        image: "images/crochet/DSCN0943/DSCN0943.jpg",
+        image: "images/metalica/DSCN0943/DSCN0943.jpg",
         title: "For Whom the Bell Tolls"
       },
       {
         thumb: "images/metalica/DSCN0944/thumb.jpg",
-        image: "images/crochet/DSCN0944/DSCN0944.jpg",
+        image: "images/metalica/DSCN0944/DSCN0944.jpg",
         title: "The Unforgiven"
       },
       {
         thumb: "images/metalica/DSCN0945/thumb.jpg",
-        image: "images/crochet/DSCN0945/DSCN0945.jpg",
+        image: "images/metalica/DSCN0945/DSCN0945.jpg",
         title: "Frayed Ends of Sanity"
       },
       {
         thumb: "images/metalica/DSCN0946/thumb.jpg",
-        image: "images/crochet/DSCN0946/DSCN0946.jpg",
+        image: "images/metalica/DSCN0946/DSCN0946.jpg",
         title: "Don’t Tread on Me"
       },
       {
         thumb: "images/metalica/DSCN0947/thumb.jpg",
-        image: "images/crochet/DSCN0947/DSCN0947.jpg",
+        image: "images/metalica/DSCN0947/DSCN0947.jpg",
         title: "Holier Than Thou"
       },
       {
         thumb: "images/metalica/DSCN0949/thumb.jpg",
-        image: "images/crochet/DSCN0949/DSCN0949.jpg",
+        image: "images/metalica/DSCN0949/DSCN0949.jpg",
         title: "The Four Horsemen"
       },
       {
         thumb: "images/metalica/DSCN0950/thumb.jpg",
-        image: "images/crochet/DSCN0950/DSCN0950.jpg",
+        image: "images/metalica/DSCN0950/DSCN0950.jpg",
         title: "Dyers Eve"
       },
       {
         thumb: "images/metalica/DSCN0951/thumb.jpg",
-        image: "images/crochet/DSCN0951/DSCN0951.jpg",
+        image: "images/metalica/DSCN0951/DSCN0951.jpg",
         title: "Harvester of Sorrow"
       },
       {
         thumb: "images/metalica/DSCN0952/thumb.jpg",
-        image: "images/crochet/DSCN0952/DSCN0952.jpg",
+        image: "images/metalica/DSCN0952/DSCN0952.jpg",
         title: "Shortest Straw"
       },
       {
         thumb: "images/metalica/DSCN0953/thumb.jpg",
-        image: "images/crochet/DSCN0953/DSCN0953.jpg",
+        image: "images/metalica/DSCN0953/DSCN0953.jpg",
         title: "Sanitarium"
       },
       {
         thumb: "images/metalica/DSCN0954/thumb.jpg",
-        image: "images/crochet/DSCN0954/DSCN0954.jpg",
+        image: "images/metalica/DSCN0954/DSCN0954.jpg",
         title: "Nothing Else Matters"
       },
       {
         thumb: "images/metalica/DSCN0956/thumb.jpg",
-        image: "images/crochet/DSCN0956/DSCN0956.jpg",
+        image: "images/metalica/DSCN0956/DSCN0956.jpg",
         title: "Master of Puppets"
       },
       {
         thumb: "images/metalica/DSCN0957/thumb.jpg",
-        image: "images/crochet/DSCN0957/DSCN0957.jpg",
+        image: "images/metalica/DSCN0957/DSCN0957.jpg",
         title: "Crash Course in Brain Surgery"
       },
       {
         thumb: "images/metalica/DSCN0958/thumb.jpg",
-        image: "images/crochet/DSCN0958/DSCN0958.jpg",
+        image: "images/metalica/DSCN0958/DSCN0958.jpg",
         title: "Eye of the Beholder"
       },
       {
         thumb: "images/metalica/DSCN0959/thumb.jpg",
-        image: "images/crochet/DSCN0959/DSCN0959.jpg",
+        image: "images/metalica/DSCN0959/DSCN0959.jpg",
         title: "Ain’t my Bitch"
       },
       {
         thumb: "images/metalica/DSCN0960/thumb.jpg",
-        image: "images/crochet/DSCN0960/DSCN0960.jpg",
+        image: "images/metalica/DSCN0960/DSCN0960.jpg",
         title: "Sad But True"
       },
       {
         thumb: "images/metalica/DSCN0961/thumb.jpg",
-        image: "images/crochet/DSCN0961/DSCN0961.jpg",
+        image: "images/metalica/DSCN0961/DSCN0961.jpg",
         title: "Enter Sandman"
       },
       {
         thumb: "images/metalica/DSCN0962/thumb.jpg",
-        image: "images/crochet/DSCN0962/DSCN0962.jpg",
+        image: "images/metalica/DSCN0962/DSCN0962.jpg",
         title: "Leper Messiah"
       },
       {
         thumb: "images/metalica/DSCN0963/thumb.jpg",
-        image: "images/crochet/DSCN0963/DSCN0963.jpg",
+        image: "images/metalica/DSCN0963/DSCN0963.jpg",
         title: "Am I Evil"
       }
 
@@ -977,31 +977,31 @@
       },
       {
         thumb: "images/matresses/hard_night_of_clubbing/thumb.jpg",
-        image: "images/matresses/hard_night_of_clubbing/hard_night_of_clubbing.jpg",
+        image: "images/matresses/hard_night_of_clubbing/hard-night-of-clubbing.jpg",
         title: "Hard Night of Clubbing"
 
       },
       {
         thumb: "images/matresses/mr_big_stuff/thumb.jpg",
-        image: "images/matresses/mr_big_stuff/mr_big_stuff.jpg",
+        image: "images/matresses/mr_big_stuff/mr-big-stuff.jpg",
         title: "Mr Big Stuff"
 
       },
       {
         thumb: "images/matresses/mr_big_stuff_detail/thumb.jpg",
-        image: "images/matresses/mr_big_stuff_detail/mr_big_stuff_detail.jpg",
+        image: "images/matresses/mr_big_stuff_detail/mr-big-stuff-detail.jpg",
         title: "Mr Big Stuff (Detail)"
 
       },
       {
         thumb: "images/matresses/oh_how_lady_like/thumb.jpg",
-        image: "images/matresses/oh_how_lady_like/oh_how_lady_like.jpg",
+        image: "images/matresses/oh_how_lady_like/oh-how-lady-like.jpg",
         title: "Oh How Lady Like"
 
       },
       {
         thumb: "images/matresses/oh_how_lady_like_detail/thumb.jpg",
-        image: "images/matresses/oh_how_lady_like_detail/oh_how_lady_like_detail.jpg",
+        image: "images/matresses/oh_how_lady_like_detail/oh-how-lady-like-detail.jpg",
         title: "Oh How Lady Like (Detail)"
 
       },
